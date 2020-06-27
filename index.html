@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-size: 40px;"> Calculator</title>
+    <link rel = "icon"
+    href =  "http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/128/Apps-accessories-calculator-icon.png"   
+    type = "image/x-icon"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    
+</head>
+
+<body>
+    <div class="main">
+    <h1>CALCULATOR</h1>
+    <input  class='result' id='result'  type="text" size="53px"  >
+    <input  class='result' id ="calculation" type="text" size="36px" >
+    <div class='btn'>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="upon()">1/x</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="square()">x<sup>2</sup></button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="under_root()"><sup>2</sup>&#8730;x</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="clear_result()">C</button>
+    </div>
+    <div class='btn'>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('7')">7</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('8')">8</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('9')">9</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('/')">&#247</button>
+    </div>
+
+    <div class='btn'>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('4')">4</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('5')">5</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('6')">6</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('*')">*</button>
+    </div>
+    <div class='btn'>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('1')">1</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('2')">2</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('3')">3</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('-')">-</button>
+    </div>
+    <div class='btn'>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="clear_digit()" class="bottom" style="font-size: 21px;"> &#8592 </button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('0')" class="bottom">0</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('.')" class="bottom">.</button>
+        <button onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" onclick="write_value('+')" class="bottom">+</button>
+    </div>
+
+</div>
+</body>
+
+</html>
